@@ -7,18 +7,24 @@
   </head>
   <body onload="newGame()">
     <div id="header">
-      <h2>The Great</h2>
-      <h1 id="header-clue">rgb(xxx,xxx,xxx)</h1>
-      <h2>Guessing Game</h2>
+      <div id="h1">The Great Guessing Game</div>
+      <h2 id="header-clue">rgb(xxx,xxx,xxx)</h2>
     </div>
-    <div id="container">
+    <div id="score">
+      
+    </div>
+    <font style="font-size:18vh">
+    <div id="containerUP">
       <div class="tile" id="1"></div>
       <div class="tile" id="2"></div>
       <div class="tile" id="3"></div>
+    </div>
+    <div id="containerD">
       <div class="tile" id="4"></div>
       <div class="tile" id="5"></div>
       <div class="tile" id="6"></div>
     </div>
+    </font>
 
     <script>
       var t1 = document.getElementById("1");
@@ -68,7 +74,19 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          document.getElementById("header").style.background = correctColor;
+          
+          document.getElementById("1").textContent= "G";
+          document.getElementById("1").style.textAlign="center";
+          document.getElementById("2").textContent= "R";
+          document.getElementById("2").style.textAlign="center";
+          document.getElementById("3").textContent= "E";
+          document.getElementById("3").style.textAlign="center";
+          document.getElementById("4").textContent= "A";
+          document.getElementById("4").style.textAlign="center";
+          document.getElementById("5").textContent= "T";
+          document.getElementById("5").style.textAlign="center";
+          document.getElementById("6").textContent= "!";
+          document.getElementById("6").style.textAlign="center";
         } else {
           t1.style.background = "black";
         }
@@ -81,7 +99,20 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          document.getElementById("header").style.background = correctColor;
+          
+          document.getElementById("1").textContent = "G";
+          document.getElementById("1").style.textAlign="center";
+          document.getElementById("2").textContent= "R";
+          document.getElementById("2").style.textAlign="center";
+          document.getElementById("3").textContent= "E";
+          document.getElementById("3").style.textAlign="center";
+          document.getElementById("4").textContent= "A";
+          document.getElementById("4").style.textAlign="center";
+          document.getElementById("5").textContent= "T";
+          document.getElementById("5").style.textAlign="center";
+          document.getElementById("6").textContent= "!";
+          document.getElementById("6").style.textAlign="center";
+          
         } else {
           t2.style.background = "black";
         }
@@ -94,7 +125,20 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          document.getElementById("header").style.background = correctColor;
+          
+          document.getElementById("1").textContent = "G";
+          document.getElementById("1").style.textAlign="center";
+          document.getElementById("2").textContent= "R";
+          document.getElementById("2").style.textAlign="center";
+          document.getElementById("3").textContent= "E";
+          document.getElementById("3").style.textAlign="center";
+          document.getElementById("4").textContent= "A";
+          document.getElementById("4").style.textAlign="center";
+          document.getElementById("5").textContent= "T";
+          document.getElementById("5").style.textAlign="center";
+          document.getElementById("6").textContent= "!";
+          document.getElementById("6").style.textAlign="center";
+          
         } else {
           t3.style.background = "black";
         }
@@ -107,7 +151,20 @@
           t2.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          document.getElementById("header").style.background = correctColor;
+          
+          document.getElementById("1").textContent = "G";
+          document.getElementById("1").style.textAlign="center";
+          document.getElementById("2").textContent= "R";
+          document.getElementById("2").style.textAlign="center";
+          document.getElementById("3").textContent= "E";
+          document.getElementById("3").style.textAlign="center";
+          document.getElementById("4").textContent= "A";
+          document.getElementById("4").style.textAlign="center";
+          document.getElementById("5").textContent= "T";
+          document.getElementById("5").style.textAlign="center";
+          document.getElementById("6").textContent= "!";
+          document.getElementById("6").style.textAlign="center";
+          
         } else {
           t4.style.background = "black";
         }
@@ -120,7 +177,20 @@
           t4.style.background = correctColor;
           t2.style.background = correctColor;
           t6.style.background = correctColor;
-          document.getElementById("header").style.background = correctColor;
+          
+          document.getElementById("1").textContent = "G";
+          document.getElementById("1").style.textAlign="center";
+          document.getElementById("2").textContent= "R";
+          document.getElementById("2").style.textAlign="center";
+          document.getElementById("3").textContent= "E";
+          document.getElementById("3").style.textAlign="center";
+          document.getElementById("4").textContent= "A";
+          document.getElementById("4").style.textAlign="center";
+          document.getElementById("5").textContent= "T";
+          document.getElementById("5").style.textAlign="center";
+          document.getElementById("6").textContent= "!";
+          document.getElementById("6").style.textAlign="center";
+          
         } else {
           t5.style.background = "black";
         }
@@ -133,7 +203,20 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t2.style.background = correctColor;
-          document.getElementById("header").style.background = correctColor;
+          
+          document.getElementById("1").textContent = "G";
+          document.getElementById("1").style.textAlign="center";
+          document.getElementById("2").textContent= "R";
+          document.getElementById("2").style.textAlign="center";
+          document.getElementById("3").textContent= "E";
+          document.getElementById("3").style.textAlign="center";
+          document.getElementById("4").textContent= "A";
+          document.getElementById("4").style.textAlign="center";
+          document.getElementById("5").textContent= "T";
+          document.getElementById("5").style.textAlign="center";
+          document.getElementById("6").textContent= "!";
+          document.getElementById("6").style.textAlign="center";
+          
         } else {
           t6.style.background = "black";
         }
