@@ -7,11 +7,22 @@
   </head>
   <body onload="newGame()">
     <div id="header">
-      <div id="h1">The Great Guessing Game</div>
+      <marquee direction="right" scrollamount="20"><div id="h1">The Great Guessing Game</div></marquee>
       <h2 id="header-clue">rgb(xxx,xxx,xxx)</h2>
     </div>
     <div id="score">
-      
+      <div id="Tries">Number of Tries :  </div>
+      <div id="card"> xxx</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <font style="font-size:5vh">
+      <div class="tile" id="new"></div>
+      </font>
     </div>
     <font style="font-size:18vh">
     <div id="containerUP">
@@ -33,8 +44,11 @@
       var t4 = document.getElementById("4");
       var t5 = document.getElementById("5");
       var t6 = document.getElementById("6");
+      var n=document.getElementById("new")
       var x;
       var correctColor;
+      clicks=0;
+      document.getElementById("card").innerHTML=clicks;
 
       function getRandomColor() {
         var letters = "0123456789ABCDEF";
@@ -52,9 +66,9 @@
         t4.style.background = getRandomColor();
         t5.style.background = getRandomColor();
         t6.style.background = getRandomColor();
-
+        clicks=0;
         x = Math.floor(Math.random() * 6 + 1);
-
+        n.style.background=getRandomColor()
         if (x == 1) correctColor = t1.style.background;
         else if(x==2) correctColor = t2.style.background;
         else if(x==3) correctColor = t3.style.background;
@@ -74,7 +88,8 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
           document.getElementById("1").textContent= "G";
           document.getElementById("1").style.textAlign="center";
           document.getElementById("2").textContent= "R";
@@ -89,6 +104,8 @@
           document.getElementById("6").style.textAlign="center";
         } else {
           t1.style.background = "black";
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
         }
       });
 
@@ -99,7 +116,8 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
           document.getElementById("1").textContent = "G";
           document.getElementById("1").style.textAlign="center";
           document.getElementById("2").textContent= "R";
@@ -115,6 +133,8 @@
           
         } else {
           t2.style.background = "black";
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
         }
       });
 
@@ -125,7 +145,8 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
           document.getElementById("1").textContent = "G";
           document.getElementById("1").style.textAlign="center";
           document.getElementById("2").textContent= "R";
@@ -141,6 +162,8 @@
           
         } else {
           t3.style.background = "black";
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
         }
       });
 
@@ -151,7 +174,8 @@
           t2.style.background = correctColor;
           t5.style.background = correctColor;
           t6.style.background = correctColor;
-          
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
           document.getElementById("1").textContent = "G";
           document.getElementById("1").style.textAlign="center";
           document.getElementById("2").textContent= "R";
@@ -167,6 +191,8 @@
           
         } else {
           t4.style.background = "black";
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
         }
       });
 
@@ -177,7 +203,8 @@
           t4.style.background = correctColor;
           t2.style.background = correctColor;
           t6.style.background = correctColor;
-          
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
           document.getElementById("1").textContent = "G";
           document.getElementById("1").style.textAlign="center";
           document.getElementById("2").textContent= "R";
@@ -193,6 +220,8 @@
           
         } else {
           t5.style.background = "black";
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
         }
       });
 
@@ -203,7 +232,8 @@
           t4.style.background = correctColor;
           t5.style.background = correctColor;
           t2.style.background = correctColor;
-          
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
           document.getElementById("1").textContent = "G";
           document.getElementById("1").style.textAlign="center";
           document.getElementById("2").textContent= "R";
@@ -219,9 +249,16 @@
           
         } else {
           t6.style.background = "black";
+          clicks+=1;
+          document.getElementById("card").innerHTML = clicks;
         }
       });
-
+      document.getElementById("new").textContent="NewGame";
+      document.getElementById("new").textAlign="center";
+      n.addEventListener("click",function(){
+        location.reload();
+      });
+     
     </script>
   </body>
 </html>
